@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_dark_background">
+    android:background="@color/cardview_dark_background"
+    android:orientation="vertical">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="INI FRAGMEN TEMAN"
+        android:text="LIST TEMAN"
         android:textColor="@color/white"
         android:fontFamily="serif"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"/>
+        android:gravity="center_horizontal"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_listMyfriends"
+        android:layout_margin="16dp"/>
 
-</RelativeLayout>
+</LinearLayout>
